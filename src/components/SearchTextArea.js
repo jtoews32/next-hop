@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import './Simpletextarea.css';
+import './SearchTextArea.css';
 
-class Simpletextarea extends Component {
+class SearchTextArea extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -48,39 +48,4 @@ class Simpletextarea extends Component {
     }
 }
 
-export default Simpletextarea;
-
-/*
-
-
-
-    // this.state.textAreaValue
-    return (
-      <div>
-   
-        <label>Search Results</label>
-
- 
-        {entries.map((event) => (
-        <div>
-          <div>
-            <div>{event.datetime}</div>
-            <div>{event.ponumber}</div>
-            <div>{event.comp}</div>
-          </div>
-        </div>
-    ))}
-
-
-
-      </div>
-    );
-  //}
-
-
-        <textarea rows="20" className="example"
-          value={entries}
-          onChange={this.handleChange}
-        />
-
-    */
+export default SearchTextArea;
