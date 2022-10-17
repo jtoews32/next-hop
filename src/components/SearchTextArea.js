@@ -16,9 +16,6 @@ class SearchTextArea extends Component {
   }
 
   render() {
-
-   // let val = JSON.stringify(this.props.data.entries);
-
     return (
 <div class="text-secondary">
     <div class="col-md-115">
@@ -26,17 +23,20 @@ class SearchTextArea extends Component {
             <div class="position-tl w-102 border-t-3 brc-primary-tp3 ml-n1px mt-n1px"></div>
             
             <div class="card-header pb-3 brc-secondary-l3">
-                <h5 class="card-title mb-2 mb-md-0 text-dark-m3">Unified Network Event Log</h5>
+                <h5 class="card-title mb-2 mb-md-0 text-dark-m3">Unified Network Event Log {this.props.data.poNumber}</h5>
             </div>
             <div class="card-body pt-2 pb-1">
             {this.props.data.entries.map((event) => (
                 <div class="d-flex flex-wrap align-items-center my-2 bgc-secondary-l4 bgc-h-secondary-l3 radius-1 p-25 d-style">
                     <span class="text-default-d3 text-90"> 
-                        <span class="text-80">{event.datetime}</span> 
-                        {event.ponumber}
+                        <span class="text-80 p-25 ">{event.datetime}</span> 
+                        
                     </span> 
-                    <span class="ml-2"> {event.component}  </span>
-                    <span class="ml-auto text-dark-l2 text-nowrap">   {event.action} </span>
+                    <span class="text-80 p-25 "></span> 
+                    <span class="text-80 p-25 ">{event.component}</span> 
+                    <span class="text-80 p-25 ">{event.action}</span> 
+                    <span class="ml-2"></span>
+                    <span class="ml-auto text-dark-l2 text-nowrap"></span>
                     <span class="ml-2"></span>
                 </div>
             ))}

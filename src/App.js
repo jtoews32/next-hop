@@ -18,13 +18,18 @@ class App extends Component {
   changeMessage() {
 
     const entries = {
+      "poNumber": this.state.poNumber,
       "entries" : [
-        {"datetime":"12/12/2022 10:30:10 AM", "ponumber":"PO00012", "component":"Supplier", "action":"Order Placement"}, 
-        {"datetime":"12/12/2022 10:30:10 AM", "ponumber":"PO00012", "component":"OS", "action":"Order"}, 
-        {"datetime":"12/12/2022 10:40:00 AM", "ponumber":"PO00012", "component":"DSCO", "action":"Po ACK"}, 
-        {"datetime":"12/12/2022 10:50:10 AM", "ponumber":"PO00012", "component":"UNITE", "action":"Order Create"}, 
-        {"datetime":"12/12/2022 10:50:10 AM", "ponumber":"PO00012", "component":"DSCO", "action":"Shipment"}, 
-        {"datetime":"12/12/2022 10:50:10 AM", "ponumber":"PO00012", "component":"OS", "action":"Confirmation Email"}
+        {"datetime":"12/12/2022 10:10:10 AM", "component":"CUP V3 Order Placement", "action":"Order Placement"}, 
+        {"datetime":"12/12/2022 10:32:10 AM", "component":"Camelot", "action":"Order"}, 
+        {"datetime":"12/12/2022 10:40:00 AM", "component":"EyeVee", "action":"Order"}, 
+        {"datetime":"12/12/2022 10:51:10 AM", "component":"Orderstream", "action":"Order Create"}, 
+        {"datetime":"12/12/2022 10:56:10 AM", "component":"Unite", "action":"Order"}, 
+        {"datetime":"12/12/2022 10:57:10 AM", "component":"ES", "action":"Order"},
+        {"datetime":"12/12/2022 10:57:10 AM", "component":"DSCO", "action":"Order"},
+        {"datetime":"12/12/2022 10:57:10 AM", "component":"Camelot", "action":"PO Ack"},
+        {"datetime":"12/12/2022 10:57:10 AM", "component":"EyeVee", "action":"PO Ack"},
+        {"datetime":"12/12/2022 10:57:10 AM", "component":"Orderstream", "action":"Comfirmation Email"}
       ]
     };
 
@@ -62,7 +67,7 @@ class App extends Component {
   <div class="container">
     <header class="d-flex flex-row py-3">
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Order Packets</a></li>
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Order Packets</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Item Packets</a></li>
       </ul>
     </header>
